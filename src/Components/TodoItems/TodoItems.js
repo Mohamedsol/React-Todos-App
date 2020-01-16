@@ -15,7 +15,7 @@ const TodoItems = (props) => {
     })
     return (
         <div>
-            <div>
+            <div className= "ListItems"> 
                 <span>Name</span>
                 <span>Age</span>
                 <span>Action</span>
