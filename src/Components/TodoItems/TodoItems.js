@@ -3,16 +3,21 @@ import './TodoItems.css'
 
 
 const TodoItems = (props) => {
-    const {items} = props;
-    const ListItems = items.map(item => {
+    const {items, deleteItem} = props;
+
+    const ListItems = items.length ? (
+        items.map(item => {
         return (
             <div key ={item.id}>
                 <span>{item.name}</span>
                 <span>{item.age}</span>
-                <span>&times;</span>
+                <span onClick={() => deleteItem(item.id)}>&times;</span>
             </div>
         )
     })
+    ) : (
+        <p> There is no item to show</p>
+    )
     return (
         <div>
             <div className= "ListItems"> 

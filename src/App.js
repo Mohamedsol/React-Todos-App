@@ -23,11 +23,20 @@ class App extends Component  {
 
     ]
   } 
+
+  deleteItem = (id) => {
+    let items = this.state.items.filter( item => {
+      return item.id !== id
+    })
+    this.setState({items: items})
+  }
+
   render() {
+
     return (
       <div className="App">
         Todo list app
-        <TodoItems items={this.state.items}/>
+        <TodoItems items={this.state.items} deleteItem= {this.deleteItem} />
         <AddItems />
       </div>
     );
