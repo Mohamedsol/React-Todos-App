@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -15,12 +15,13 @@ body {
 
 .container {
   width: 60%;
-  margin: 10% auto
+  margin: 10% auto;
 }
 
 .ListItems {
   background: #fff;
-  color:  #46529d;
+  color: #46529d;
+  border-radius: 4px;
 }
 
 .ListItems p {
@@ -35,43 +36,41 @@ body {
   padding: 10px 0px;
   font-size: 20px;
   border: 0.3px solid #ccc;
-
 }
 .ListItems span.title {
   background: #2ebaee;
   color: #fff;
 }
 
-.ListItems span.name, 
-form input[type=text]{
-width: 60%
+.ListItems span.name,
+form input[type="text"] {
+  width: 60%;
 }
 
-.ListItems span.age, 
-form input[type=number]{
-width: 30%
+.ListItems span.age,
+form input[type="number"] {
+  width: 30%;
 }
-.ListItems span.action, 
-form input[type=submit]{
-width: 10%
+.ListItems span.action,
+form input[type="submit"] {
+  width: 10%;
 }
 
 .ListItems span.icon {
- color: #2ebaee;
- cursor: pointer;
+  color: #2ebaee;
+  cursor: pointer;
 }
 
 form input {
   padding: 10px;
   background: #ebebeb;
   border: transparent;
-  border: 0.3px solid #ccc
+  border: 0.3px solid #ccc;
 }
-form input[type=submit]
-{
+form input[type="submit"] {
   background: #2ebaee;
   border: 0.3px solid #2ebaee;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   font-size: 13px;
 }
